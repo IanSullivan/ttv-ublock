@@ -1,5 +1,6 @@
 /// twitch-videoad.js
 const origFetch = window.fetch;
+console.log(origFetch)
 window.fetch = (url, init, ...args) => {
 	if (typeof url === "string") {
 		if (url.includes("/access_token")) {
